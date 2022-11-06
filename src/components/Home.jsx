@@ -7,13 +7,13 @@ export default function Home () {
     return(
         <div className="home">
             <div className="heading">
-                <Link to="/mypf/quiz">
+                <Link to="/quiz">
                     <img className='main-img' src={quizimg} alt={quizimg} />
                 </Link>
-                <Link to="/mypf/tenzies">
+                <Link to="/tenzies">
                     <img className='main-img' src={tenziesimg} alt={tenziesimg} />
                 </Link>
-                <Link to="/mypf/notes">
+                <Link to="/notes">
                     <img className='main-img' src={notesimg} alt={notesimg} />
                 </Link>
             </div>

@@ -6,16 +6,16 @@ export default function Header () {
 		<nav>
 			<ul>
 				<li>
-					<Link to="/mypf/">Home</Link>
+					<Link to="/">Home</Link>
 				</li>
 				<li>
-					<Link to="/mypf/quiz">Quizlet</Link>
+					<Link to="/quiz">Quizlet</Link>
 				</li>
 				<li>
-					<Link to="/mypf/tenzies">Tenzies</Link>
+					<Link to="/tenzies">Tenzies</Link>
 				</li>
 				<li>
-					<Link to="/mypf/notes">Notes</Link>
+					<Link to="/notes">Notes</Link>
 				</li>
 			</ul>
 		</nav>
