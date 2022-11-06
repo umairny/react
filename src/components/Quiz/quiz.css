@@ -1,0 +1,158 @@
+  .start, .quiz {
+    max-width: 600px;
+    min-height: 550px;
+    background-color: #F5F7FB;
+    color: #293264;
+    position: relative;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content{
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 30px;
+  }
+  .topRect, .topRectQuiz{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .botRect, .botRectQuiz {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .botRectQuiz, .topRectQuiz{
+    width: 100px;
+  }
+  .but{
+    background-color: #4D5B9E;
+    color: #F5F7FB;
+    border: none;
+    border-radius: 15px;
+    width: 190px;
+    height: 50px;
+    margin: 10px auto;
+    display: block;
+  }
+  .subBut{
+    background-color: #4D5B9E;
+    color: #F5F7FB;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 25px;
+    margin: 5px;
+  }
+  .but:hover, .subBut:hover{
+    cursor: pointer;
+    background-color: #293264;
+  }
+  .correct{
+    color: red;
+    text-align: end;
+  }
+  .qBox{
+    padding: 10%;
+    z-index: 99;
+  }
+  .question{
+    letter-spacing: 0.6px;
+    margin: 10px 0;
+  }
+  select{
+    padding: 5px 5px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    border: 1px solid #D6DBF5;
+    color: #293264;
+    display: block;
+  }
+  .main-label{
+    display: block;
+    float: left;
+    letter-spacing: 0px;
+    margin-right: 10px;
+  }
+  .rad-input{
+    display: inline;
+  }
+  .radio-toolbar {
+    margin: 10px;
+  }
+  .radio-toolbar input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+  .radio-toolbar label {
+      display: inline-block;
+      background-color: #F5F7FB;
+      padding: 5px 15px;
+      border: 1px solid #4D5B9E;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 5px;
+  }
+  .radio-toolbar label:hover {
+    background-color: #D6DBF5;
+  }
+  .radio-toolbar input[type="radio"]:checked + label {
+      background-color: #D6DBF5;
+      border-color: #D6DBF5;
+  }
+
+  hr {
+    border: 1px #D6DBF5 solid;
+  }
+  .score{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: #4D5B9E;
+    background-color: #D6DBF5;
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+  .good{
+    color: green;
+  }
+  .bad{
+    color: red;
+  }
+  
+  /*Error page style*/
+  .error, .loading {
+    height: 50vh;
+    text-align: center;
+    color: red;
+    margin: 10%;
+  }
+  
+  /* Loading page style Ring */
+  .lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
