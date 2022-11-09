@@ -1,0 +1,149 @@
+/* As hex codes */
+
+.color-primary-0 { color: #C908FF }	/* Main Primary color */
+.color-primary-1 { color: #ECA7FF }
+.color-primary-2 { color: #E175FF }
+.color-primary-3 { color: #70008F }
+.color-primary-4 { color: #56006E }
+
+.color-complement-0 { color: #E9FF00 }	/* Main Complement color */
+.color-complement-1 { color: #F7FFA4 }
+.color-complement-2 { color: #F3FF70 }
+.color-complement-3 { color: #C3D500 }
+.color-complement-4 { color: #96A400 }
+
+/* As RGBa codes */
+.rgba-primary-0 { color: rgba(201,  8,255,1) }	/* Main Primary color */
+.rgba-primary-1 { color: rgba(236,167,255,1) }
+.rgba-primary-2 { color: rgba(225,117,255,1) }
+.rgba-primary-3 { color: rgba(112,  0,143,1) }
+.rgba-primary-4 { color: rgba( 86,  0,110,1) }
+
+.rgba-complement-0 { color: rgba(233,255,  0,1) }	/* Main Complement color */
+.rgba-complement-1 { color: rgba(247,255,164,1) }
+.rgba-complement-2 { color: rgba(243,255,112,1) }
+.rgba-complement-3 { color: rgba(195,213,  0,1) }
+.rgba-complement-4 { color: rgba(150,164,  0,1) }
+
+/* Nav bar */
+.navbar {
+    display: flex;
+    background: #faffbe;
+    text-align: center;
+    height: 50px;
+    padding: 0 5%;
+  }
+.nav-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.nav-logo{
+    font-weight: bolder;
+    font-size: 1.15rem;
+    padding-left: 18px;
+    background-image: url("/react.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+  .toggle-btn{
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+.navbar a{
+    color: #56006E;
+    text-decoration: none;
+    position: relative;
+    margin: 0 10px;
+  }
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -15%;
+    transform: translateX(-50%) scaleX(0);
+    width: 100%;
+    height: 3px;
+    background-color: rgba(195,213,  0,0.3) ;
+    transition: all 250ms;
+}
+.navbar a:hover {
+  color: #96A400;
+}
+.navbar a:hover::after {
+    transform: translateX(-50%) scaleX(1);
+    background-color: rgba(195,213,  0,1) ;
+}
+.navbar a.active{
+  color: #56006E;
+  font-weight: bolder;
+}
+.navbar a.active::after
+{
+    transform: translateX(-50%) scaleX(1);
+    background-color: #C908FF;
+}
+
+@media (max-width: 600px) {
+  .toggle-btn{
+    display: inline-block;
+    cursor: pointer;
+  }
+  .bar1, .bar2 ,.bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: #C3D500;
+    margin: 5px 0;
+    transition: all 0.4s;
+  }
+	/* Rotate first bar */
+	.animate .bar1 {
+			-webkit-transform: rotate(-45deg) translate(-4px, 4px) ;
+			transform: rotate(-45deg) translate(-4px, 4px) ;
+		}
+		/* Fade out the second bar */
+		.animate .bar2 {
+			opacity: 0;
+		}
+		/* Rotate last bar */
+		.animate .bar3 {
+			-webkit-transform: rotate(45deg) translate(-7px, -8px) ;
+			transform: rotate(45deg) translate(-7px, -8px) ;
+	}
+  .menu {
+    display: none;
+  }
+  .show {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #faffbe;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    opacity: 1;
+    transition: all 1s;
+  }
+  .hide a, .show a{
+    padding: 10px 0px;
+    margin: 10px 0px;
+  }
+  .hide{
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    background-color: #faffbe;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    opacity: 0;
+    transition: all 1s;
+  }
+
+}

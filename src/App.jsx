@@ -17,7 +17,6 @@ function App() {
           <Route exact path='/tenzies' element={<Tenzies />} />
           <Route exact path='/notes' element={<Notes />} />
         </Routes>
-          
       </HashRouter>
     </div>
   )
