@@ -1,0 +1,14 @@
+.head-anim {
+  opacity: 0;
+  transition: 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation: heading 1s ease 0.2s forwards;
+}
+
+@keyframes heading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

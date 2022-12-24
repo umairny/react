@@ -8,7 +8,7 @@ import { Routes, HashRouter, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <>
       <HashRouter>
         <Header />
         <Routes>
@@ -18,7 +18,7 @@ function App() {
           <Route exact path='/notes' element={<Notes />} />
         </Routes>
       </HashRouter>
-    </div>
+    </>
   )
 }
 
